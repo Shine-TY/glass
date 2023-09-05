@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>watches</title>
+
+    <link rel="icon" href="images/icon-watch.png">
+    <!--font awesome CDN link-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link -->
+
+    <link rel="stylesheet" href="glass.css">
+</head>
+<body>
+    <!-- Header section starts-->
+<header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">JO & CO<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+
+        </nav>
+
+        <div class="icons">
+                     <a href="#" class="fas fa-shopping-cart"></a>
+           
+        </div>
+
+    </header>
+
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3> premium glass </h3>
+            <span>Wear the Best</span>
+           <video autoplay loop muted plays-inline class="back-video">
+        <source src="glassvideo.mp4" type="video/mp4">    
+        </video>
+            <p>Welcome to the Ultimate Destination for Sunglass Enthusiasts! Explore the World of Shade & Style with Us</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+
+    </section>
+
+
+
+   
+
+
+    <section class="icon-container">
+        <div class="icons">
+            <img src="data:image/png;base64,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" alt="">
+            <div class="info">
+                <h3>free delivery</h3>
+                <span>on all delivery</span>
+            </div>
+
+
+        </div>
+
+        <div class="icons">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/6c180e4a-e716-4777-be66-a1e96d27c2dd.__CR0,0,665,665_PT0_SX300_V1___.jpg" alt="">
+            <div class="info">
+                <h3>10 days returns</h3>
+                <span>money back gurantee</span>
+            </div>
+
+
+        </div>
+
+        <div class="icons">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/568/777/non_2x/giving-gift-icon-vector.jpg" alt="">
+            <div class="info">
+                <h3>offer & gifts</h3>
+                <span>on all delivery</span>
+            </div>
+
+
+        </div>
+
+        <div class="icons">
+            <img src="https://static.vecteezy.com/system/resources/previews/010/177/796/original/credit-card-payment-safe-secure-icon-free-vector.jpg" alt="">
+            <div class="info">
+                <h3>secure payments</h3>
+                <span>protected by paypal</span>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+ 
+
+    <section class="products" id="products">
+        <h1 class="heading">latest <span> products</span></h1>
+
+        <div class="box-container">
+
+
+            <div class="box">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="https://i.etsystatic.com/39347511/r/il/173c8a/5044398625/il_794xN.5044398625_e6m3.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                  <h3><a href="product.html">  Aviator Retro  </a></h3>
+                    <div class="price"> ₹ 900<span> ₹ 1200</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1685981909/755266_J0740_1012_001_100_0000_Light-Square-frame-sunglasses.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3> Persol</h3>
+                    <div class="price">MRP ₹ 15,002<span>MRP ₹ 16,802</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-12%</span>
+                <div class="image">
+                    <img src="https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1687192227/755268_I3330_8012_001_100_0000_Light-Navigator-frame-sunglasses.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Breitling</h3>
+                    <div class="price">MRP ₹ 5,000<span>MRP ₹ 6,200</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img width="260" src="https://cdn.shopify.com/s/files/1/0635/3836/4660/products/SPL890E_2055301B_01_1000x.png?v=1650905107" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Carrera</h3>
+                    <div class="price">MRP ₹ 23,900<span>MRP ₹ 25,100</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-8%</span>
+                <div class="image">
+                    <img src="https://images.asos-media.com/products/aj-morgan-square-lens-sunglasses-in-silver/24053294-1-silver?$n_640w$&wid=513&fit=constrain" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Polaroid</h3>
+                    <div class="price">MRP ₹ 25,862<span>MRP ₹ 28,638</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="https://cdn.shopify.com/s/files/1/0635/3836/4660/products/SPLL07_20560568_01_1000x.png?v=1676313527" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Le Specs </h3>
+                    <div class="price">MRP ₹ 43,082<span>MRP ₹ 50,387</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-6%</span>
+                <div class="image">
+                    <img src="https://assets2.oakley.com/cdn-record-files-pi/314110e0-ff5e-41b4-8c69-a68c0061fcc7/5cfd5c25-178d-4821-b226-ad7a00450aa3/0OO9102__9102D6__P21__shad__qt.png?impolicy=OO_ratio&width=2000" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Tom Ford</h3>
+                    <div class="price">MRP ₹ 21,009<span>MRP ₹ 24,189</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="https://img4.dhresource.com/0x0/f3/albu/km/t/27/30e41bd2-d8ee-4ee4-b5cd-cb0d07b4bc44.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Ray-Ban</h3>
+                    <div class="price">MRP ₹ 25,802<span>MRP ₹ 29,802</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="https://fastcdn.impakter.com/wp-content/uploads/2021/09/giorgio-trovato-K62u25Jk6vo-unsplash.jpg?strip=all&lossy=1&quality=92&ssl=1" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Audemars Piguet</h3>
+                    <div class="price">MRP ₹ 23,102<span>MRP ₹ 26,502</span></div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <!--Products section ends-->
+
+    
+  <!-- About section starts -->
+
+  <section class="about" id="about">
+    <h1 class="heading"><span> about </span> us </h1>
+    <div class="row">
+
+               <div class="content">
+            <h3>why choose us?</h3>
+            <p>We at Jo&CO Eyewear pride ourselves on providing the ultimate customer experience, whether you are buying replacement spectacles, designer sunglasses or you require an eye test.
+
+                We have a strong belief and commitment to our mission, our Mission is to provide a unique personalised service to all eyecare customers, to utilize our recognized and trustworthy team to serve the local community with the highest professional and reliable standards.
+                </p>
+            
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- About secction ends -->
+    <!--contact section starts -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"><span>contact</span> us</h1>
+
+        <div class="row">
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+            <div class="image">
+                <img src="images/contact-img.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--contact section ends-->
+
+    <!--footer section starts-->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">products</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my order</a>
+                <a href="#">my favorite</a>
+            </div>
+
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">india</a>
+                <a href="#">USA</a>
+                <a href="#">japan</a>
+                <a href="#">france</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="#">example@gmail.com</a>
+                <a href="#">mumbai, india - 400104</a>
+                <img src="images/payment.png" alt="">
+            </div>
+
+        </div>
+
+        
+
+    </section>
+
+
+    <!--footer section ends-->
+
+
+</body>
+
+</html>
